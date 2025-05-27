@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                sh 'dotnet build --configuration Release'
             }
         }
         stage('Test') {
@@ -14,6 +15,13 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
+                sh 'dotnet publish --configuration Release -o ./publish'
+            }
+        }
+        stage('Run') {
+            steps {
+                echo 'Running application...'
+                sh 'dotnet ./publish/test-cicd-project.dll'
             }
         }
     }
