@@ -1,0 +1,37 @@
+# .NET Core build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code settings
+.vscode/
+
+# Build results of dotnet publish
+publish/
+*.publish/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.psmdcp
+
+# Dotnet tool restore
+.dotnet_tool/
+
+# Logs
+*.log
+
+# Others
+TestResults/
+*.dbmdl
+*.jfm
+.DS_Store
+*.swp
