@@ -35,3 +35,6 @@ TestResults/
 *.jfm
 .DS_Store
 *.swp
+
+# volume docker
+jenkins_home/
